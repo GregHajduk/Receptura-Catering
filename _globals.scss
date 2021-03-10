@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&family=Poppins:wght@300&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    -webkit-tap-highlight-color: transparent;
+font-family: 'Cabin',
+sans-serif;
+overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    font-family: 'Poppins',
+        sans-serif;
+        color: $sectext;
+        line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 5.2rem;
+    color: $text;
+        font-family: 'Bebas Neue',
+        cursive;
+        font-weight: initial;
+        line-height: 0.6;
+}
+h2{
+    font-size: 1.5rem;
+    color: $secaccent;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: medium;
+}
+h4{
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: $secaccent;
+}
+h5{
+    color: $text;
+}
+
+li {
+    list-style: none;
+}
+
+
+.ma {
+    margin: 0 auto;
+}
+
+
+.df {
+    display: flex;
+}
+
+.df-jc-sb {
+    justify-content: space-between;
+}
+
+.df-jc-c {
+    justify-content: center;
+}
+.df-jc-sa {
+    justify-content: space-around;
+}
+
+.df-ai-c {
+    align-items: center;
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    min-width: 11rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, $accent, $secaccent) 1;
+    transition: 0.3s all;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.btn-write {
+    background: linear-gradient(45deg, $accent, $secaccent);
+    color: $mainbg;
+}
+
+.btn-call {
+    background-color: $accent;
+    background-image: linear-gradient(90deg, $accent, $secaccent);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+@media all and (min-width:600px) {
+h1{
+    font-size: 8rem;
+    line-height: 0.5;
+}
+    h2{
+    font-size: 2rem;
+}
+}
+@media all and (min-width:1024px) {
+
+    h2{
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+}
+@media all and (min-width:2000px) {
+h1{
+    font-size: 6rem;
+}
+    h2{
+    font-size: 3.5rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+}

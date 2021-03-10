@@ -1,0 +1,123 @@
+.main-page-container {
+    background: linear-gradient(($secbg, $mainbg));
+}
+
+.nav {
+    position: relative;
+    z-index: 100;
+    max-width: 75rem;
+    width: 100%;
+    height: 8vh;
+    padding: 0 1rem;
+
+    &__logo {
+        width: 4rem;
+    }
+
+    &__links {
+        position: absolute;
+        left: 0;
+        top: 8vh;
+        background-color: $mainbg;
+        width: 100%;
+        height: 92vh;
+        text-align: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: all 0.4s cubic-bezier(.79, .78, .05, .98);
+    }
+
+    &__burger {
+        cursor: pointer;
+    }
+
+    &__link {
+        padding-bottom: 0.5rem;
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 2px solid $secbg;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    &__link a {
+        color: $secaccent;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        transition: 0.3s all;
+                &:hover{
+            color: $text;
+        }
+    }
+
+    &__line {
+        width: 25px;
+        height: 3px;
+        background-color: $secaccent;
+        border-radius: 10%;
+        display: block;
+        transition: all 0.4s cubic-bezier(.79, .78, .05, .98);
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+    }
+
+}
+
+
+.close .line1 {
+    transform: translate(-30%);
+}
+
+.close .line3 {
+    transform: translate(30%);
+}
+
+
+.nav__active {
+    transform: translateX(0);
+}
+
+@media all and (min-width: 800px) {
+    .nav {
+        position: initial;
+        height: 8vh;
+        padding: 0 1rem;
+
+        &__links {
+            position: initial;
+            background-color: transparent;
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(0);
+        }
+
+        &__burger {
+            display: none;
+        }
+
+        &__link {
+            padding-bottom: initial;
+            width: initial;
+            margin: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+                    &:not(:last-child) {
+                        margin-bottom: 0;
+                    }
+        }
+
+        &__link a {
+            font-size: 0.875rem;
+        }
+    }
+}

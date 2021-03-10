@@ -1,0 +1,32 @@
+.block{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(photos/block-bg.jpg) center/cover no-repeat fixed;
+    height: 70vh;
+    flex-direction: column;
+    text-align: center;
+    &__text{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        color: $text;
+    }
+}
+@media all and (min-width:700px){
+    .block{
+        height: 50vh;
+        &__text{
+            width: 50%;
+        }
+    }
+}
+@media all and (min-width:1440px){
+    .block{
+        &__text{
+            max-width: 40em;
+        }
+    }
+}
+@media all and (min-width:2000px){
+    .block{
+        height: 40vh;
+    }
+}

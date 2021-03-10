@@ -1,0 +1,64 @@
+.zestawy-container {
+    background-color: $mainbg;
+    
+
+}
+
+.main2-container {
+    height: 50vh;
+    background: linear-gradient(rgba(109, 109, 109, 0.6), rgba(109, 109, 109, 0.6)),
+        url('/photos/plate.jpg')center/cover no-repeat;
+}
+
+.main {
+    &__title2 {
+        color: $text;
+        text-transform: uppercase;
+        font-weight: initial;
+        font-size: 3rem;
+        letter-spacing: 8px;
+        line-height: 1;
+    }
+}
+
+.zestawy {
+    max-width: 75em;
+    padding: 3rem 0.5rem;
+    border-radius: 15px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+
+    &__card {
+        flex-direction: column;
+        border-radius: 15px;
+        background-color: $secbg;
+        padding-top: 1.5rem;
+    }
+
+    &__name {
+        color: $secaccent;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    &__price {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    &__desc {
+        height: 100%;
+        color: $sectext;
+        background-color: $thirdbg;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 1.5rem;
+    }
+
+    &__desc li {
+        list-style-type: disc;
+    }
+}

@@ -1,0 +1,40 @@
+.quality-container {
+    background-color: $mainbg;
+}
+
+.quality {
+    max-width: 75em;
+
+    padding: 3rem 0.5rem;
+
+    &__cards {
+        padding: 3rem 0;
+        background-color: $secbg;
+        border-radius: 15px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+    &__card{
+        padding: 1.5rem 0.5rem;
+    }
+
+    &__img {
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, $accent, $secaccent);
+        border-radius: 50%;
+    }
+    &__desc{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media all and (min-width:600px){
+    .quality{
+        padding-bottom: 6rem;
+    }
+}

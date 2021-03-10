@@ -1,0 +1,46 @@
+.about-container{
+    background-color: $mainbg;
+}
+.about{
+    max-width: 75em;
+    padding: 3rem 0.5rem;
+    
+    &__content{
+        flex-direction: column;
+    }
+    &__right, &__left{
+        border-radius: 15px;
+        background-color: $secbg;
+        flex-direction: column;
+    }
+    &__text{
+        padding: 1.5rem;
+    }
+    &__left{
+        margin-bottom: 2rem;
+    }
+    &__img{
+            max-height:30vh ;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            object-fit: cover;
+        }
+    
+}
+@media all and (min-width:550px) {
+    .about{
+    &__content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__right, &__left {
+        justify-content: space-between;
+        width: 48%;
+    }
+    &__left{
+        margin-bottom: 0;
+    }
+
+        
+    }
+}

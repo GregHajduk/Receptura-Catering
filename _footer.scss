@@ -1,0 +1,52 @@
+.footer-container {
+    
+    background-color: $mainbg;
+    padding: 0.5rem;
+}
+
+.footer {
+    background-color: $secbg;
+    border-radius: 15px;
+    padding:2.5rem 1.5rem;
+    max-width: 75em;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    &__title{
+        text-align: left;
+    }
+    &__address{
+        margin: 0 auto;
+    }
+
+    &__tele {
+        color: $secaccent;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        display: inline-block;
+        transition: 0.3s all;
+        i{
+            margin-right: 0.5rem;
+        }
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__victoria {
+        margin: 4rem auto 0;
+    }
+
+    &__img {
+        max-width: 8rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        filter: grayscale(100%);
+    }
+    &__mail{
+        color: $secaccent;
+    }
+
+
+
+
+}
